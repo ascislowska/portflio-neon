@@ -1,0 +1,48 @@
+// @import '../global/layout.scss';
+
+// .header {
+//   position: fixed;
+//   left: 0;
+//   height: 100vh;
+//   width: 15vw;
+//   overflow-x: hidden;
+//   background-color: $primary-color-lighter;
+//   color: $secondary-color;
+
+//   & nav {
+//     & li {
+//       color: $primary-color;
+//       border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+
+//       & a {
+//         display: grid;
+//         padding: 0.75rem 0.2rem;
+//         grid-template-columns: 3rem 1fr;
+//         gap: 0.5rem;
+//         font-size: larger;
+
+//         & .icon {
+//           justify-self: center;
+//           width: 1.75rem;
+//           height: 1.75rem;
+//           & * {
+//             fill: $primary-color;
+//           }
+//         }
+//       }
+//       &.active {
+//         color: $secondary-color;
+//         & a .icon * {
+//           fill: $secondary-color;
+//         }
+//       }
+
+//       &:hover {
+//         color: $secondary-color;
+//         & a .icon * {
+//           fill: $secondary-color;
+//         }
+//       }
+//     }
+//   }
+// }

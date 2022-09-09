@@ -1,0 +1,65 @@
+//scss variables
+$primary-color: #151324;
+$primary-color-lighter: #252235;
+$secondary-color: #fafbfb;
+//accents
+$neon-blue: #6161ff;
+$sweatbitter: #ff6161;
+$pastel-pink: #fc9d9f;
+$pastel-yellow: #fcfa9d;
+$pastelviolet: #b496db;
+$pastelgreen: #69beb3;
+$mobile: 800px;
+
+$main-font: 'Poppins';
+
+@mixin flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@mixin hoverLinks {
+  transform: scale(1.1);
+  color: $secondary-color;
+}
+
+body {
+  font-family: $main-font;
+}
+
+h1 {
+  font-weight: 600;
+  font-size: 4rem;
+  text-align: center;
+}
+h2 {
+  font-weight: 500;
+  font-size: 2rem;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
+.btn {
+  border: 2px solid $neon-blue;
+  color: $neon-blue;
+  font-size: 1.2rem;
+  font-weight: 100;
+  padding: 1rem;
+  border-radius: 2rem;
+  &:hover {
+    cursor: pointer;
+    background-color: $neon-blue;
+    color: $secondary-color;
+  }
+}
+
+.icon {
+  path {
+    fill: $primary-color;
+    width: 0.5rem;
+    height: 0.5rem;
+  }
+}

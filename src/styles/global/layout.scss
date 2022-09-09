@@ -1,0 +1,46 @@
+@import './global', './resets';
+
+body {
+  background-color: $primary-color;
+}
+
+.page {
+  width: 100%;
+  grid-column: 2;
+  scroll-snap-align: start;
+
+  @include flexCenter;
+
+  & .content {
+    max-width: 80vw;
+    padding: 2rem;
+    @include flexCenter;
+    flex-direction: column;
+  }
+
+  &.about {
+    background-color: $secondary-color;
+  }
+  &.skills {
+    background-color: $primary-color;
+  }
+  &.portfolio {
+    background-color: $primary-color;
+    color: $secondary-color;
+  }
+  &.active {
+    background-color: aquamarine;
+  }
+}
+
+.chevron-wrapper {
+  position: absolute;
+  bottom: 1rem;
+  right: 2rem;
+  z-index: 3;
+  height: 40px;
+  width: 40px;
+  & .icon:hover {
+    @include hoverLinks;
+  }
+}

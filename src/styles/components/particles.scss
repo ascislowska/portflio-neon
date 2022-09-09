@@ -1,0 +1,52 @@
+// @import '../global/layout.scss';
+
+// .animation-wrapper {
+//   //wrapper must be a child element of a positioned container - i.e. hero with position: relative;
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   height: 100%;
+//   width: 100%;
+// }
+
+// @for $i from 0 through 100 {
+//   .particle-#{$i} {
+//     $color-particle: #fff;
+//     $size: random(
+//         $limit: 5
+//       ) +
+//       px;
+//     $time: (random() * 2+4) + s;
+//     $delay: (random() * 3) + s;
+//     visibility: hidden;
+//     transform: translateY(-10vh);
+//     left: (random($limit: 75) + vw);
+//     background-color: $color-particle;
+//     width: $size;
+//     height: $size;
+//     border-radius: 50%;
+//     position: absolute;
+//     animation: ease-out animateParticle;
+//     animation-duration: $time;
+//     animation-delay: $delay;
+//   }
+// }
+// .particle {
+//   border-radius: 50%;
+//   position: absolute;
+// }
+
+// @keyframes animateParticle {
+//   0% {
+//     visibility: visible;
+//     transform: translateY(110vh);
+//     opacity: 0.8;
+//   }
+//   98% {
+//     transform: translateY(-10vh);
+//     opacity: 0;
+//   }
+//   100% {
+//     visibility: hidden;
+//   }
+// }
