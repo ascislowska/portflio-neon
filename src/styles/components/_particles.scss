@@ -1,0 +1,57 @@
+@import '../global/global.scss';
+$colors: $secondary-color, $pastelgreen, $neon-blue, $pastelviolet, $pastel-pink,
+  $sweatbitter, $pastel-yellow;
+
+#start {
+  position: relative;
+  .particle {
+    border-radius: 50%;
+    position: absolute;
+  }
+
+  @for $i from 0 through 150 {
+    .particle-#{$i} {
+      $color-particle: nth($colors, random(length($colors)));
+
+      $size: random(
+          $limit: 7
+        ) +
+        px;
+      $time: (random() * 2+4) + s;
+      $delay: (random() * 3) + s;
+      visibility: hidden;
+      right: (random($limit: 75) + vw);
+      @media screen and (max-width: $small-screen) {
+        right: (random($limit: 100) + vw);
+      }
+
+      background: $color-particle;
+      box-shadow: $color-particle 0px 0px 3px $size;
+
+      width: $size;
+      height: $size;
+      animation: ease-out animateParticle;
+      animation-duration: $time;
+      animation-delay: $delay;
+      transform: translateY(60vh);
+    }
+  }
+
+  @keyframes animateParticle {
+    0% {
+      visibility: visible;
+      transform: translateY(60vh);
+
+      opacity: 0.8;
+    }
+    98% {
+      transform: translateY(-60vh);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(-60vh);
+
+      visibility: hidden;
+    }
+  }
+}

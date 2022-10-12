@@ -1,15 +1,23 @@
 //scss variables
-$primary-color: #151324;
-$primary-color-lighter: #252235;
+//$primary-color: #151324;
+//$primary-color-lighter: #252235;
+
+$primary-color: #1e1e1e;
+$primary-color-lighter: #000000;
+
 $secondary-color: #fafbfb;
+$secondary-color-accent: #6161ff;
 //accents
+//$pastelgreen: #69beb3;
+$pastelgreen: #00be79;
 $neon-blue: #6161ff;
+$pastelviolet: #b9bfff;
+$pastel-pink: #ff9eec;
 $sweatbitter: #ff6161;
-$pastel-pink: #fc9d9f;
-$pastel-yellow: #fcfa9d;
-$pastelviolet: #b496db;
-$pastelgreen: #69beb3;
-$mobile: 800px;
+$pastel-yellow: #ffeb87;
+//$pastel-yellow: #fcfa9d;
+$mobile: 768px;
+$small-screen: 1024px;
 
 $main-font: 'Poppins';
 
@@ -20,7 +28,33 @@ $main-font: 'Poppins';
 }
 @mixin hoverLinks {
   transform: scale(1.1);
-  color: $secondary-color;
+  //color: $secondary-color-accent;
+}
+
+@mixin borderTags($color, $width) {
+  border: solid $width $color;
+  padding: 0.5rem;
+  border-radius: 3rem;
+}
+@mixin linkWithIcon($color, $hoverColor) {
+  color: $color;
+  & .icon * {
+    fill: $color;
+  }
+
+  & .active {
+    color: $hoverColor;
+    & .icon * {
+      fill: $hoverColor;
+    }
+  }
+
+  &:hover {
+    color: $hoverColor;
+    & .icon * {
+      fill: $hoverColor;
+    }
+  }
 }
 
 body {
@@ -49,17 +83,10 @@ a {
   font-weight: 100;
   padding: 1rem;
   border-radius: 2rem;
+  background-color: inherit;
   &:hover {
     cursor: pointer;
     background-color: $neon-blue;
     color: $secondary-color;
-  }
-}
-
-.icon {
-  path {
-    fill: $primary-color;
-    width: 0.5rem;
-    height: 0.5rem;
   }
 }

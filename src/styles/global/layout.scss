@@ -1,46 +1,37 @@
-@import './global', './resets';
+@import './global', './resets', './mobile';
+@import '../components/header', '../components/sections',
+  '../components/projects-list', '../components/project',
+  '../components/contact', '../components/particles';
 
 body {
   background-color: $primary-color;
 }
-
+p {
+  font-size: 18px;
+}
 .page {
-  width: 100%;
-  grid-column: 2;
-  scroll-snap-align: start;
-
-  @include flexCenter;
+  display: grid;
+  grid-template-columns: 15% 85%;
 
   & .content {
-    max-width: 80vw;
-    padding: 2rem;
-    @include flexCenter;
-    flex-direction: column;
-  }
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
 
-  &.about {
-    background-color: $secondary-color;
-  }
-  &.skills {
-    background-color: $primary-color;
-  }
-  &.portfolio {
-    background-color: $primary-color;
-    color: $secondary-color;
-  }
-  &.active {
-    background-color: aquamarine;
+    grid-column-end: -1;
+    min-height: 100vh;
   }
 }
 
-.chevron-wrapper {
-  position: absolute;
-  bottom: 1rem;
-  right: 2rem;
-  z-index: 3;
-  height: 40px;
-  width: 40px;
-  & .icon:hover {
-    @include hoverLinks;
-  }
-}
+// .chevron-wrapper {
+//   position: absolute;
+//   bottom: 1rem;
+//   right: 2rem;
+//   z-index: 3;
+//   height: 40px;
+//   width: 40px;
+//   & .icon:hover {
+//     @include hoverLinks;
+//   }
+// }

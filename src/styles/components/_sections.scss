@@ -1,0 +1,37 @@
+@import '../global/global';
+
+.section {
+  min-height: 100vh;
+  @include flexCenter;
+  flex-direction: column;
+  scroll-snap-align: start;
+
+  &.dark {
+    background-color: $primary-color;
+    color: $secondary-color;
+  }
+  &.light {
+    background-color: $secondary-color;
+    color: $primary-color;
+  }
+  & .description {
+    margin: 2rem;
+    padding: 1.75rem;
+  }
+  & p {
+    margin: 2rem;
+    font-size: larger;
+  }
+  .btn-container {
+    @include flexCenter;
+  }
+}
+@media screen and (max-width: $mobile) {
+  .section .description {
+    margin: 0.5rem;
+    padding: 0.75rem 0.75rem;
+    p {
+      font-size: large;
+    }
+  }
+}
