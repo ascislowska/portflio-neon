@@ -6,7 +6,6 @@ import Navbar from "./Navbar"
 
 const Header = () => {
   const [navbarVisible, setNavbarVisible] = useState(false)
-  console.log(navbarVisible)
   return (
     <div className="header">
       <Link to="/#start" className="logo">
