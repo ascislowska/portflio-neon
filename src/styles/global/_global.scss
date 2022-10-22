@@ -90,3 +90,11 @@ a {
     color: $secondary-color;
   }
 }
+@media (max-width: $mobile) {
+  :root {
+    font-size: small;
+  }
+  h1 {
+    font-size: 3rem;
+  }
+}

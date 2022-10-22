@@ -11,13 +11,14 @@ const About = () => {
           React, Gatsby oraz Wordpress.
         </p>
         <p>
-          Potrzebna Ci strona firmowa, blog, landing page, witryna projektu,
-          interaktywna prezentacja danych a może masz inny pomysł? Pomogę.
+          Mogę stworzyć m.in. stronę firmową, bloga, landing page, witrynę
+          projektu, interaktywny raport.
         </p>
         <p>
-          Mogę stworzyć nową stronę z indywidualnym projektem graficznym albo
-          dostosować istniejący szablon do Twoich potrzeb. Gotową stronę
-          umieszczę na serwerze pod wybranym przez Ciebie adresem.
+          W zależności od potrzeb przygotuję nową stronę z indywidualnym
+          projektem graficznym albo dostosuję istniejący szablon do Twoich
+          celów. Gotową stronę umieszczę na serwerze pod wybranym przez Ciebie
+          adresem.
         </p>
 
         <div className="btn-container">

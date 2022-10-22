@@ -1,8 +1,8 @@
 @import './global', './resets', './mobile';
 @import '../components/header', '../components/sections',
   '../components/projects-list', '../components/project',
-  '../components/contact', '../components/particles';
-
+  '../components/contact', '../components/particles', '../components/blob',
+  '../components/start';
 body {
   background-color: $primary-color;
 }
@@ -16,22 +16,10 @@ p {
   & .content {
     height: 100vh;
     overflow-y: scroll;
-    scroll-snap-type: y mandatory;
+    //scroll-snap-type: y mandatory;
     scroll-behavior: smooth;
 
     grid-column-end: -1;
     min-height: 100vh;
   }
 }
-
-// .chevron-wrapper {
-//   position: absolute;
-//   bottom: 1rem;
-//   right: 2rem;
-//   z-index: 3;
-//   height: 40px;
-//   width: 40px;
-//   & .icon:hover {
-//     @include hoverLinks;
-//   }
-// }

@@ -1,6 +1,5 @@
 import React from "react"
 import { Link } from "gatsby"
-import Particles from "./Particles"
 
 const Start = () => {
   const particles = []

@@ -4,7 +4,7 @@ h1#portfolio {
 }
 .projects-list {
   width: 100%;
-  padding: 3rem;
+  padding: 3rem 0.5rem;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   grid-gap: 3rem;
