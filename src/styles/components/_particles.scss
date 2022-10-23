@@ -14,10 +14,10 @@ $colors: $secondary-color, $pastelgreen, $neon-blue, $pastelviolet, $pastel-pink
       $color-particle: nth($colors, random(length($colors)));
 
       $size: random(
-          $limit: 7
+          $limit: 15
         ) +
         px;
-      $time: (random() * 2+4) + s;
+      $time: (random() * 2 + 4) + s;
       $delay: (random() * 3) + s;
       visibility: hidden;
       right: (random($limit: 75) + vw);
@@ -44,6 +44,7 @@ $colors: $secondary-color, $pastelgreen, $neon-blue, $pastelviolet, $pastel-pink
 
       opacity: 0.8;
     }
+
     98% {
       transform: translateY(-60vh);
       opacity: 0;
