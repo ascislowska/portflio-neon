@@ -35,7 +35,7 @@ const Navbar = ({ navbarVisible, setNavbarVisible }) => {
     <nav className={`navbar ${navbarVisible ? "navbar-visible" : ""}`}>
       {sections.map(section => {
         return (
-          <li>
+          <li key={section.name}>
             <Link
               to={`/#${section.name}`}
               onClick={() => setNavbarVisible(false)}

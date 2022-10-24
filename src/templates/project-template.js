@@ -22,7 +22,7 @@ const PageTemplate = ({ data, children }) => {
     <Layout>
       <div className="project-page">
         <div className="img-wrapper">
-          <a href={link} className="site-link" target="_blank">
+          <a href={link} className="site-link" target="_blank" rel="noreferrer">
             <GatsbyImage
               image={getImage(image)}
               className="main-img"
@@ -36,8 +36,16 @@ const PageTemplate = ({ data, children }) => {
             <MDXProvider components={shortcodes}>{children}</MDXProvider>
           </div>
           <div className="details">
-            <a href={link} className="site-link" target="_blank">
-              <VisitWebsiteIcon className="icon" />
+            <a
+              href={link}
+              className="site-link"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <VisitWebsiteIcon
+                className="icon"
+                alt="website with a lightbulb"
+              />
               <span>Zobacz stronę</span>
             </a>
             <div className="">

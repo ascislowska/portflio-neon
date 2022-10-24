@@ -29,7 +29,11 @@ const ProjectsList = ({ projects }) => {
               <h2 className="project-title">{title}</h2>
               <div className="project-category">{category}</div>
             </div>
-            <GatsbyImage image={getImage(image)} className="img-wrapper" />
+            <GatsbyImage
+              image={getImage(image)}
+              className="img-wrapper"
+              alt={title}
+            />
           </Link>
         )
       })}
