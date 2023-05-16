@@ -80,7 +80,7 @@ export const query = graphql`
         }
       }
     }
-    allMdx {
+    allMdx(sort: { fields: frontmatter___date, order: DESC }) {
       nodes {
         frontmatter {
           category
