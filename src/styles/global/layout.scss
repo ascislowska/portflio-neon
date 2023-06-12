@@ -12,7 +12,7 @@ p {
   display: grid;
   grid-template-columns: 15% 85%;
 
-  & .content {
+  &>.content {
     height: 100vh;
     overflow-y: scroll;
     //scroll-snap-type: y mandatory;

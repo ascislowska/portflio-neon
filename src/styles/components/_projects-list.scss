@@ -20,9 +20,11 @@ h1#portfolio {
 
     overflow: hidden;
     &:hover {
-      @include hoverLinks;
-      transition: all 0.5s ease-out;
-
+      & .project-img {
+        @include hoverLinks;
+        transition: all 0.5s ease-out;
+        transform: scale(120%);
+      }
       & .project-info {
         transform: translateY(-100%);
         transition: all 0.5s ease-out;

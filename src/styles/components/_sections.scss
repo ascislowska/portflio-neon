@@ -5,6 +5,7 @@
   @include flexCenter;
   flex-direction: column;
   scroll-snap-align: start;
+  padding: 1rem; 
 
   &.dark {
     background-color: $primary-color;
@@ -14,9 +15,10 @@
     background-color: $secondary-color;
     color: $primary-color;
   }
-  & .description {
+  & .content {
     margin: 2rem;
-    padding: 1.75rem;
+    padding: 2rem;
+    max-width: 1200px;
   }
   & p {
     margin: 2rem;
@@ -27,7 +29,7 @@
   }
 }
 @media screen and (max-width: $mobile) {
-  .section .description {
+  .section .content {
     margin: 0;
     padding: 0.75rem 0rem;
     p {

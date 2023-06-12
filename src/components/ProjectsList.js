@@ -14,7 +14,7 @@ const ProjectsList = ({ projects }) => {
   ]
 
   return (
-    <div className="projects-list">
+    <div className="projects-list content">
       {projects.map((project, id) => {
         const {
           frontmatter: { title, category, slug, image },
@@ -31,7 +31,7 @@ const ProjectsList = ({ projects }) => {
             </div>
             <GatsbyImage
               image={getImage(image)}
-              className="img-wrapper"
+              className="img-wrapper project-img"
               alt={title}
             />
           </Link>

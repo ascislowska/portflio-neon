@@ -4,7 +4,7 @@ import { Link } from "gatsby"
 const About = () => {
   return (
     <div className="section light" id="about">
-      <div className="description">
+      <div className="content">
         <h1>O mnie</h1>
         <p>
           Przygotowuję strony internetowe przyjazne użytkownikom. Wykorzystuję
