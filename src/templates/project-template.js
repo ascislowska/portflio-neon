@@ -6,6 +6,7 @@ import { GatsbyImage, getImage } from "gatsby-plugin-image"
 
 import Layout from "../components/Layout"
 import VisitWebsiteIcon from "../images/icons/portfolio4.svg"
+import Github from "../images/icons/github-mark-white.svg"
 import ProjectsList from "../components/ProjectsList"
 
 const shortcodes = { Link }
@@ -13,7 +14,7 @@ const shortcodes = { Link }
 const PageTemplate = ({ data, children }) => {
   //single post info:
   const {
-    frontmatter: { title, tags, link, image },
+    frontmatter: { title, tags, link, image, github },
   } = data.mdx
   //for ProjectsList component:
   const { nodes: projectsList } = data.allMdx
@@ -48,6 +49,22 @@ const PageTemplate = ({ data, children }) => {
               />
               <span>Zobacz stronę</span>
             </a>
+            {github && (
+              <a
+                href={github}
+                className="site-link"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <Github
+                  className="icon"
+                  alt="Github logo"
+                  viewBox="0 0 100 100"
+                />
+                <span>Github</span>
+              </a>
+            )}
+
             <div className="">
               <h3>Technologie: </h3>
               <div className="tags">
@@ -73,6 +90,7 @@ export const query = graphql`
         category
         tags
         link
+        github
         image {
           childImageSharp {
             gatsbyImageData(placeholder: TRACED_SVG)
