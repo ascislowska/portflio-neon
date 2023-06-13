@@ -1,7 +1,7 @@
 @import './global', './resets', './mobile';
 @import '../components/header', '../components/sections',
   '../components/projects-list', '../components/project',
-  '../components/contact', '../components/start', '../components/particles';
+  '../components/contact', '../components/start', '../components/particles', '../components/about';
 body {
   background-color: $primary-color;
 }

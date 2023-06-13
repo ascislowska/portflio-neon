@@ -1,6 +1,6 @@
 import React, { useState } from "react"
 import { FiMenu, FiX } from "react-icons/fi"
-import { Link } from "gatsby"
+import { Link, StaticImage } from "gatsby"
 import Navbar from "./Navbar"
 
 const Header = () => {
@@ -9,7 +9,11 @@ const Header = () => {
     <div className="header">
       <Link to="/#start" className="logo">
         {/* <div className="photo-wrapper">
-          <StaticImage src="../images/profile.jpg" className="photo" alt="anna Ścisłowska portrait" />
+          <StaticImage
+            src="../images/profile.jpg"
+            className="photo"
+            alt="anna Ścisłowska portrait"
+          />
         </div> */}
         <h4>Front-end developer</h4>
         <h3>Anna Ścisłowska</h3>

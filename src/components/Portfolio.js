@@ -29,7 +29,7 @@ const Portfolio = () => {
 
   return (
     <div className="section dark">
-      <h1 id="portfolio">Moje strony</h1>
+      <h1 id="portfolio">My projects</h1>
       <ProjectsList projects={projects} />
     </div>
   )

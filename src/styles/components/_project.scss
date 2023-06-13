@@ -46,23 +46,17 @@
           height: 100%;
         }
       }
-      & .tags {
+     .tags {
         display: flex;
         flex-wrap: wrap;
-
         & span {
-          display: block;
-          min-width: 4rem;
-          text-align: center;
-          font-size: 0.9rem;
-          //padding: 0.2rem;
-          margin: 0.3rem;
           @include borderTags($pastel-yellow, 1px);
         }
       }
     }
   }
 }
+
 //MOBILE
 @media screen and (max-width: 768px) {
   .project-page .project-info {

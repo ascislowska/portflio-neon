@@ -19,11 +19,11 @@
     margin: 2rem;
     padding: 2rem;
     max-width: 1200px;
+&.text * {
+  margin: 2rem;
+}
   }
-  & p {
-    margin: 2rem;
-    font-size: larger;
-  }
+
   .btn-container {
     @include flexCenter;
   }

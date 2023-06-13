@@ -1,0 +1,10 @@
+@import '../global/global';
+#about {
+    .tags {
+        display: flex;
+        flex-wrap: wrap;
+        & span {
+          @include borderTags($pastelgreen, 1px);
+        }
+      }
+}

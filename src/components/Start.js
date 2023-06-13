@@ -10,9 +10,9 @@ const Start = () => {
   return (
     <section id="start" className="section dark">
       <h2 className="name">Anna Ścisłowska</h2>
-      <h1 className="motto">Tworzę strony internetowe.</h1>
+      <h1 className="motto">React developer to hire</h1>
       <Link to="/#contact" className="btn">
-        Kontakt
+        Contact
       </Link>
       {particles.map(particle => (
         <div className={particle} key={particle}></div>

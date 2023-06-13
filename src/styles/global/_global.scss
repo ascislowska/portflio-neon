@@ -34,6 +34,11 @@ $main-font: 'Poppins';
   border: solid $width $color;
   padding: 0.5rem;
   border-radius: 3rem;
+  display: block;
+  min-width: 4rem;
+          text-align: center;
+          font-size: 0.9rem;
+          margin: 0.3rem;
 }
 @mixin linkWithIcon($color, $hoverColor) {
   color: $color;

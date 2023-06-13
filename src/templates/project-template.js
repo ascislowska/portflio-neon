@@ -47,7 +47,7 @@ const PageTemplate = ({ data, children }) => {
                 className="icon"
                 alt="website with a lightbulb"
               />
-              <span>Zobacz stronę</span>
+              <span>Website</span>
             </a>
             {github && (
               <a
@@ -66,7 +66,7 @@ const PageTemplate = ({ data, children }) => {
             )}
 
             <div className="">
-              <h3>Technologie: </h3>
+              <h3>Technologies: </h3>
               <div className="tags">
                 {tags.map(tag => {
                   return <span className="tag">{tag}</span>
@@ -75,7 +75,7 @@ const PageTemplate = ({ data, children }) => {
             </div>
           </div>
         </div>
-        <h2>Inne projekty</h2>
+        <h2>Other projects</h2>
         <ProjectsList projects={projectsList} />
       </div>
     </Layout>

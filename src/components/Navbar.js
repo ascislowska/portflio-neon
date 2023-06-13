@@ -16,7 +16,7 @@ const Navbar = ({ navbarVisible, setNavbarVisible }) => {
     },
     {
       name: "about",
-      displayedName: "O mnie",
+      displayedName: "About me",
       icon: <AboutIcon className="icon" />,
     },
     {
@@ -26,7 +26,7 @@ const Navbar = ({ navbarVisible, setNavbarVisible }) => {
     },
     {
       name: "contact",
-      displayedName: "Kontakt",
+      displayedName: "Contact",
       icon: <ContactIcon className="icon" />,
     },
   ]
