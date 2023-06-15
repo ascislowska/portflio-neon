@@ -4,6 +4,9 @@
   padding: 3rem 0;
   background-color: $primary-color;
   color: $secondary-color;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   h2 {
     text-align: center;
   }
