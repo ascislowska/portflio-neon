@@ -10,7 +10,7 @@ const Start = () => {
   return (
     <section id="start" className="section dark">
       <h2 className="name">Anna Ścisłowska</h2>
-      <h1 className="motto">React developer to hire</h1>
+      <h1 className="motto">React developer</h1>
       <Link to="/#contact" className="btn">
         Contact
       </Link>
